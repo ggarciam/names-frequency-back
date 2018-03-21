@@ -18,7 +18,10 @@ app.use(function(req, res, next){
     next();
 });
 
+console.log("Hola");
 console.log(process.env);
+console.log("Puerto");
+console.log(process.env.PORT);
 
 app.set('port', (process.env.PORT || 5000));
 
