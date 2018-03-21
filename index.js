@@ -18,6 +18,8 @@ app.use(function(req, res, next){
     next();
 });
 
+console.log(process.env);
+
 app.set('port', (process.env.PORT || 5000));
 
 app.use('/', routes);
